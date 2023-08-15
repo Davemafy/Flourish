@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Cookie;
+    src: url("fonts/Cookie-Regular.ttf");
+  }
+  
+body{
+    font-family: Cookie;
+    color:  antiquewhite;
+    background: #111;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    /* background: var(--background-body); */
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    font-size: 2rem;
+}
