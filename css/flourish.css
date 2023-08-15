@@ -1,17 +1,19 @@
 @font-face {
     font-family: Cookie;
     src: url("fonts/Cookie-Regular.ttf");
-  }
-  
-body{
-    font-family: Cookie;
-    color:  antiquewhite;
-    background: #111;
 }
 
-header{
-    position: sticky;
+body {
+    font-family: Cookie;
+    color: antiquewhite;
+    background: #000;
+    margin: 0;
+}
+
+header {
+    position: fixed;
     top: 0%;
+    z-index: 1;
     /* background: var(--background-body); */
     height: 4rem;
     display: flex;
@@ -19,14 +21,38 @@ header{
     align-items: center;
 }
 
-header nav{
+header nav {
     height: 100%;
     width: 100%;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav h1{
-    font-size: 2rem;
+#hero-section {
+    width: 100vw;
+    background: #000;
+    overflow: hidden;
+}
+
+#hero-section img {
+    height: 100%;
+}
+#shop-wrapper {
+    width: 100vw;
+}
+#shop-box1{
+    background: url("images/pexels-oliver-sjöström-1025804.jpg");
+    background-size: cover;
+    height: 60vh;
+}
+
+.top {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+.bottom {
+    clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+    margin-top: -40px;
 }
